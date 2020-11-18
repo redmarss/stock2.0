@@ -1,3 +1,3 @@
-import Config
+from Config import sql_config
 
-print(Config.sql_config['host'])
+print(sql_config['user'])
