@@ -13,6 +13,6 @@ sql_config = {
     "port" : 3306,
     "db" : "tushare",
     "user" : "root",
-    "password" : "redmarss",
+    "passwd" : "redmarss",
     "charset" : "utf8"
 }
