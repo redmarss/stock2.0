@@ -8,7 +8,7 @@
 import os 
 
 # 数据库连接
-sql_config = {
+SQL_CONFIG = {
     "host" : "127.0.0.1",
     "port" : 3306,
     "db" : "tushare",
@@ -16,3 +16,8 @@ sql_config = {
     "passwd" : "redmarss",
     "charset" : "utf8"
 }
+
+#获取根目录WORKSPACE_PATH 
+curPath = os.path.dirname(os.path.abspath(__file__))
+WORKSPACE_PATH =  curPath[:curPath.find("stock2.0\\")+len("stock2.0\\")]     #获取根目录
+

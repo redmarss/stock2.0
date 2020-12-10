@@ -1,16 +1,16 @@
-from globalConfig import sql_config
+from globalConfig import SQL_CONFIG
 import pymysql
 
 class zwdSql(object):
     def __init__(self):
         try:
             self.conn = pymysql.connect(
-                host = sql_config['host'],
-                port = sql_config['port'],
-                db = sql_config['db'],
-                user = sql_config['user'],
-                passwd = sql_config['passwd'],
-                charset = sql_config['charset']
+                host = SQL_CONFIG['host'],
+                port = SQL_CONFIG['port'],
+                db = SQL_CONFIG['db'],
+                user = SQL_CONFIG['user'],
+                passwd = SQL_CONFIG['passwd'],
+                charset = SQL_CONFIG['charset']
 
             )
         except:
@@ -18,4 +18,4 @@ class zwdSql(object):
         
 if __name__ == "__main__":
     
-    print(sql_config)
+    print(SQL_CONFIG)
