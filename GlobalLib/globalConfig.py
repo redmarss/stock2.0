@@ -13,7 +13,7 @@ SQL_CONFIG = {
     "port" : 3306,
     "db" : "tushare",
     "user" : "root",
-    "passwd" : "redmarss",
+    "passwd" : "redmarss111",
     "charset" : "utf8"
 }
 

@@ -1,4 +1,5 @@
-from globalConfig import SQL_CONFIG
+from GlobalLib.globalConfig import SQL_CONFIG
+import GlobalLib.mylogger as mylogger
 import pymysql
 
 class zwdSql(object):
@@ -14,8 +15,10 @@ class zwdSql(object):
 
             )
         except:
-            pass
+            mylogger.mylogger().error("连接数据库失败")
+
+        self.cur = self.conn.cursor()
         
 if __name__ == "__main__":
     
-    print(SQL_CONFIG)
+    zwdSql()
