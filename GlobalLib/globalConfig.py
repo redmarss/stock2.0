@@ -18,6 +18,6 @@ SQL_CONFIG = {
 }
 
 #获取根目录WORKSPACE_PATH 
-curPath = os.path.dirname(os.path.abspath(__file__))
+curPath = os.path.dirname(os.path.abspath(__file__))        #globalConfig文件所在目录
 WORKSPACE_PATH =  curPath[:curPath.find("stock2.0\\")+len("stock2.0\\")]     #获取根目录
 

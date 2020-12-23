@@ -3,10 +3,9 @@
 
 import logging
 import os
+from globalConfig import WORKSPACE_PATH
 
-
-curPath = os.path.dirname(os.path.abspath(__file__))
-rootPath = curPath[:curPath.find("myProject\\")+len("myProject\\")]     #获取根目录
+print(WORKSPACE_PATH)
 
 
 class mylogger:
